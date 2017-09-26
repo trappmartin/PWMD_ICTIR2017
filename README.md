@@ -2,13 +2,42 @@
 
 Code accompanying the paper **Retrieving Compositional Documents Using Position-Sensitive Word Mover’s Distance**.
 
-Installation
+Twin Films Dataset
 -------
-TBD
+The twin dataset described in the publication is found under:
 
-Experiments
+```text
+dataset
+```
+where the extracted IMDB mapping are found in
+```
+dataset/imdb-mappings.csv
+```
+the ground truth mappings of twin films described on wikipedia are listed in
+```text
+dataset/twin-films.csv
+```
+and the extracted plot keywords are found in binary format (python pickle) under
+```text
+dataset/plotKeywords.pkl
+```
+.
+
+Example Code
 -------
-TBD
+An example implementation of the **Position-Sensitive Word Mover’s Distance** can be found under:
+
+```text
+code/pwmd.py
+```
+
+To run the code, please ensure to install the following python packages in advance.
+
+```text
+python 3
+spacy
+pyemd
+```
 
 Citation
 -------
